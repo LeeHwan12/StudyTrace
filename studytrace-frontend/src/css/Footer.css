@@ -1,0 +1,37 @@
+.footer {
+  margin-top: 80px;
+  padding: 32px 24px;
+
+  background-color: rgba(15, 23, 42, 0.06); /* 살짝 어두운 반투명 */
+  border-top: 1px solid rgba(15, 23, 42, 0.12);
+
+  backdrop-filter: blur(6px);
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* 프로젝트 이름 */
+.footer-header {
+  font-family: var(--title-font);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: 0.3px;
+}
+
+/* 설명 문구 */
+.footer-desc {
+  font-size: 13px;
+  color: var(--text-sub);
+  line-height: 1.6;
+}
+
+/* 카피라이트 */
+.footer-copy {
+  font-size: 12px;
+  color: var(--text-muted);
+}

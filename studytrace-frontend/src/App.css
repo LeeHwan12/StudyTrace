@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root{
+  /* Light Base */
+  --bg-main: #ffffff;
+  --bg-sub: #F3F4F6;
+
+  --text-main: #0B1220;
+  --text-sub: #4B5563;
+  --text-muted: #9CA3AF;
+
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+
+  /* Fonts */
+  --ui-font: "IBM Plex Sans KR", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --en-font: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --title-font: "IBM Plex Sans KR", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+
+  /* Nav */
+  --bg-nav: rgba(255, 255, 255, 0.86);
+  --bg-nav-border: rgba(15, 23, 42, 0.10);
+
+  /* Brand */
+  --primary: #38BDF8;
+  --primary-soft: #7DD3FC;
+  --card-border: rgba(15, 23, 42, 0.10);
+}
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{ text-decoration: none; color: inherit; }
+ul{ list-style: none; }
+
+body{
+  background-color: #F7F8FA;
+  color: var(--text-main);
+  font-family: var(--ui-font);
+  line-height: 1.6;
+  letter-spacing: -0.1px;
+}
+
+/* 영어/숫자만 Inter로 잡고 싶을 때(선택) */
+.en, .num{
+  font-family: var(--en-font);
+}
+
+.app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex: 1;
+}
